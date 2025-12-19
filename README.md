@@ -11,6 +11,3 @@ A pre-built `python.wasm` module and its corresponding standard library are requ
 ## Usage
 
 To run the server, you must provide a pre-built `python.wasm` module and its corresponding standard library. Refer to `example-run.sh` for a practical demonstration of how to start the server with the necessary flags.
-
-
-```
