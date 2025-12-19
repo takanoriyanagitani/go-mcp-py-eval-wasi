@@ -1,0 +1,12 @@
+Safely evaluates a Python script in a sandbox.
+
+**Contract:** The script MUST write a single, valid JSON object to standard output.
+The input 'context' object is available as a global dictionary named 'ctx'.
+
+**Correct Usage Example:**
+'import sys, json; json.dump(dict(result=42*10), sys.stdout)'
+
+**Common Pitfalls & Errors:**
+- Incorrect Code: 'print(42)' -> Server Error: 'output was valid JSON but not an object'
+- Incorrect Code: 'print("Hello")' -> Server Error: 'output was not valid JSON'
+- No Output: '' -> Server Error: 'script produced no output'
